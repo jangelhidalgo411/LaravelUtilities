@@ -21,11 +21,7 @@ class ZendeskController extends Controller {
 			->with('Title',$Title);
 	}
 
-
 	public function Zendesk($zendesk, Request $r) {
-
-
-
 		$Client = new ZendeskAPI($this->SubDomain);
 		$Client->setAuth('basic', ['username' => $this->User, 'token' => $this->Token]);
 
