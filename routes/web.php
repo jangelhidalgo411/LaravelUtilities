@@ -17,14 +17,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::group(['namespace' => 'App\Http\Controllers\Apis'], function() {
-    Route::get('/pokemon', 'PokemonController@index');//->name('PokemonApi');
+Route::group(['namespace' => 'App\Http\Controllers\DataManager'], function() {
+    Route::get('/pokemon', 'PokemonController@index');
     Route::match(['get', 'post'], '/Getpokemons', 'PokemonController@GetPokemons');
-    Route::get('/GetPokemonInfo/{PokemonNumber}', 'PokemonController@GetPokemonInfo');
-});
+    Route::get('/Pokemon/{PokemonNumber}', 'PokemonController@GetPokemonInfo');
 
-Route::group(['namespace' => 'App\Http\Controllers\Integrations'], function() {
-    Route::get('/zendesk', 'ZendeskController@index');
-    Route::get('/zendesk/{zendesk}', 'ZendeskController@Zendesk');
-    Route::match(['get', 'post'], '/zendesk/{zendesk}/get', 'ZendeskController@GetZendeskDate');
+    Route::get('/MTG', 'MtgController@index');
+    Route::match(['get', 'post'], '/Getcards', 'MtgController@Getcards');
+    Route::get('/MTG/{CardName}', 'MtgController@GetCardInfo');
 });

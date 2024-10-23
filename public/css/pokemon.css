@@ -21,6 +21,10 @@ input.form-control[type="range"]:disabled {
 	color: transparent;
 }
 
+.Pokemon_Type {
+	text-transform: capitalize;
+	font-weight: 500;
+}
 
 input.form-control[type="range"].stat-1, input.form-control[type="range"].stat-1:disabled,
 input.form-control[type="range"].stat-2, input.form-control[type="range"].stat-2:disabled,
@@ -154,74 +158,465 @@ input.form-control[type="range"].stat-120, input.form-control[type="range"].stat
 	accent-color: #82fa58;
 }
 
-.steel {
-	background-color: #60a1b8;
-}
+.type-bug { background-color: #91a119; }
+.type-dark { background-color: #50413f; }
+.type-dragon { background-color: #5061e1; }
+.type-electric { background-color: #fac000; }
+.type-fairy { background-color: #ef71ef; }
+.type-fighting { background-color: #ff8000; }
+.type-fire { background-color: #e62829; }
+.type-flying { background-color: #81b9ef; }
+.type-ghost { background-color: #704170; }
+.type-grass { background-color: #3fa129; }
+.type-ground { background-color: #915121; }
+.type-ice { background-color: #3fd8ff; }
+.type-normal { background-color: #9fa19f; }
+.type-poison { background-color: #8f41cb; }
+.type-psychic { background-color: #ef4179; }
+.type-rock { background-color: #afa981; }
+.type-steel { background-color: #60a1b8; }
+.type-water { background-color: #2980ef; }
 
-.water {
-	background-color: #2980ef;
-}
+.bug, tr.bug td { background: -webkit-linear-gradient(0deg, #91A119, #91A119); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.bug-dark, tr.bug-dark td { background: -webkit-linear-gradient(0deg, #91A119, #50413F); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.bug-electric, tr.bug-electric td { background: -webkit-linear-gradient(0deg, #91A119, #FAC000); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.bug-fairy, tr.bug-fairy td { background: -webkit-linear-gradient(0deg, #91A119, #EF71EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.bug-fighting, tr.bug-fighting td { background: -webkit-linear-gradient(0deg, #91A119, #FF8000); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.bug-fire, tr.bug-fire td { background: -webkit-linear-gradient(0deg, #91A119, #E62829); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.bug-flying, tr.bug-flying td { background: -webkit-linear-gradient(0deg, #91A119, #81B9EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.bug-ghost, tr.bug-ghost td { background: -webkit-linear-gradient(0deg, #91A119, #704170); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.bug-grass, tr.bug-grass td { background: -webkit-linear-gradient(0deg, #91A119, #3FA129); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.bug-ground, tr.bug-ground td { background: -webkit-linear-gradient(0deg, #91A119, #915121); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.bug-poison, tr.bug-poison td { background: -webkit-linear-gradient(0deg, #91A119, #8F41CB); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.bug-psychic, tr.bug-psychic td { background: -webkit-linear-gradient(0deg, #91A119, #EF4179); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.bug-rock, tr.bug-rock td { background: -webkit-linear-gradient(0deg, #91A119, #AFA981); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.bug-steel, tr.bug-steel td { background: -webkit-linear-gradient(0deg, #91A119, #60A1B8); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.bug-water, tr.bug-water td { background: -webkit-linear-gradient(0deg, #91A119, #2980EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.dark, tr.dark td { background: -webkit-linear-gradient(0deg, #50413F, #50413F); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.dark-dragon, tr.dark-dragon td { background: -webkit-linear-gradient(0deg, #50413F, #5061E1); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.dark-fairy, tr.dark-fairy td { background: -webkit-linear-gradient(0deg, #50413F, #EF71EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.dark-fighting, tr.dark-fighting td { background: -webkit-linear-gradient(0deg, #50413F, #FF8000); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.dark-fire, tr.dark-fire td { background: -webkit-linear-gradient(0deg, #50413F, #E62829); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.dark-flying, tr.dark-flying td { background: -webkit-linear-gradient(0deg, #50413F, #81B9EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.dark-ghost, tr.dark-ghost td { background: -webkit-linear-gradient(0deg, #50413F, #704170); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.dark-grass, tr.dark-grass td { background: -webkit-linear-gradient(0deg, #50413F, #3FA129); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.dark-ground, tr.dark-ground td { background: -webkit-linear-gradient(0deg, #50413F, #915121); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.dark-ice, tr.dark-ice td { background: -webkit-linear-gradient(0deg, #50413F, #3FD8FF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.dark-normal, tr.dark-normal td { background: -webkit-linear-gradient(0deg, #50413F, #9FA19F); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.dark-poison, tr.dark-poison td { background: -webkit-linear-gradient(0deg, #50413F, #8F41CB); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.dark-psychic, tr.dark-psychic td { background: -webkit-linear-gradient(0deg, #50413F, #EF4179); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.dark-steel, tr.dark-steel td { background: -webkit-linear-gradient(0deg, #50413F, #60A1B8); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.dragon, tr.dragon td { background: -webkit-linear-gradient(0deg, #5061E1, #5061E1); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.dragon-dark, tr.dragon-dark td { background: -webkit-linear-gradient(0deg, #5061E1, #50413F); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.dragon-electric, tr.dragon-electric td { background: -webkit-linear-gradient(0deg, #5061E1, #FAC000); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.dragon-fairy, tr.dragon-fairy td { background: -webkit-linear-gradient(0deg, #5061E1, #EF71EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.dragon-fighting, tr.dragon-fighting td { background: -webkit-linear-gradient(0deg, #5061E1, #FF8000); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.dragon-fire, tr.dragon-fire td { background: -webkit-linear-gradient(0deg, #5061E1, #E62829); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.dragon-flying, tr.dragon-flying td { background: -webkit-linear-gradient(0deg, #5061E1, #81B9EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.dragon-ghost, tr.dragon-ghost td { background: -webkit-linear-gradient(0deg, #5061E1, #704170); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.dragon-ground, tr.dragon-ground td { background: -webkit-linear-gradient(0deg, #5061E1, #915121); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.dragon-ice, tr.dragon-ice td { background: -webkit-linear-gradient(0deg, #5061E1, #3FD8FF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.dragon-normal, tr.dragon-normal td { background: -webkit-linear-gradient(0deg, #5061E1, #9FA19F); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.dragon-psychic, tr.dragon-psychic td { background: -webkit-linear-gradient(0deg, #5061E1, #EF4179); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.dragon-water, tr.dragon-water td { background: -webkit-linear-gradient(0deg, #5061E1, #2980EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.electric, tr.electric td { background: -webkit-linear-gradient(0deg, #FAC000, #FAC000); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.electric-dark, tr.electric-dark td { background: -webkit-linear-gradient(0deg, #FAC000, #50413F); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.electric-dragon, tr.electric-dragon td { background: -webkit-linear-gradient(0deg, #FAC000, #5061E1); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.electric-fairy, tr.electric-fairy td { background: -webkit-linear-gradient(0deg, #FAC000, #EF71EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.electric-fighting, tr.electric-fighting td { background: -webkit-linear-gradient(0deg, #FAC000, #FF8000); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.electric-fire, tr.electric-fire td { background: -webkit-linear-gradient(0deg, #FAC000, #E62829); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.electric-flying, tr.electric-flying td { background: -webkit-linear-gradient(0deg, #FAC000, #81B9EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.electric-ghost, tr.electric-ghost td { background: -webkit-linear-gradient(0deg, #FAC000, #704170); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.electric-grass, tr.electric-grass td { background: -webkit-linear-gradient(0deg, #FAC000, #3FA129); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.electric-ground, tr.electric-ground td { background: -webkit-linear-gradient(0deg, #FAC000, #915121); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.electric-ice, tr.electric-ice td { background: -webkit-linear-gradient(0deg, #FAC000, #3FD8FF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.electric-normal, tr.electric-normal td { background: -webkit-linear-gradient(0deg, #FAC000, #9FA19F); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.electric-poison, tr.electric-poison td { background: -webkit-linear-gradient(0deg, #FAC000, #8F41CB); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.electric-psychic, tr.electric-psychic td { background: -webkit-linear-gradient(0deg, #FAC000, #EF4179); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.electric-steel, tr.electric-steel td { background: -webkit-linear-gradient(0deg, #FAC000, #60A1B8); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.electric-water, tr.electric-water td { background: -webkit-linear-gradient(0deg, #FAC000, #2980EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.fairy, tr.fairy td { background: -webkit-linear-gradient(0deg, #EF71EF, #EF71EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.fairy-fighting, tr.fairy-fighting td { background: -webkit-linear-gradient(0deg, #EF71EF, #FF8000); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.fairy-flying, tr.fairy-flying td { background: -webkit-linear-gradient(0deg, #EF71EF, #81B9EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.fairy-psychic, tr.fairy-psychic td { background: -webkit-linear-gradient(0deg, #EF71EF, #EF4179); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.fairy-steel, tr.fairy-steel td { background: -webkit-linear-gradient(0deg, #EF71EF, #60A1B8); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.fighting, tr.fighting td { background: -webkit-linear-gradient(0deg, #FF8000, #FF8000); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.fighting-dark, tr.fighting-dark td { background: -webkit-linear-gradient(0deg, #FF8000, #50413F); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.fighting-dragon, tr.fighting-dragon td { background: -webkit-linear-gradient(0deg, #FF8000, #5061E1); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.fighting-electric, tr.fighting-electric td { background: -webkit-linear-gradient(0deg, #FF8000, #FAC000); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.fighting-fire, tr.fighting-fire td { background: -webkit-linear-gradient(0deg, #FF8000, #E62829); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.fighting-flying, tr.fighting-flying td { background: -webkit-linear-gradient(0deg, #FF8000, #81B9EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.fighting-ghost, tr.fighting-ghost td { background: -webkit-linear-gradient(0deg, #FF8000, #704170); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.fighting-ice, tr.fighting-ice td { background: -webkit-linear-gradient(0deg, #FF8000, #3FD8FF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.fighting-poison, tr.fighting-poison td { background: -webkit-linear-gradient(0deg, #FF8000, #8F41CB); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.fighting-psychic, tr.fighting-psychic td { background: -webkit-linear-gradient(0deg, #FF8000, #EF4179); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.fighting-steel, tr.fighting-steel td { background: -webkit-linear-gradient(0deg, #FF8000, #60A1B8); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.fighting-water, tr.fighting-water td { background: -webkit-linear-gradient(0deg, #FF8000, #2980EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.fire, tr.fire td { background: -webkit-linear-gradient(0deg, #E62829, #E62829); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.fire-bug, tr.fire-bug td { background: -webkit-linear-gradient(0deg, #E62829, #91A119); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.fire-dark, tr.fire-dark td { background: -webkit-linear-gradient(0deg, #E62829, #50413F); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.fire-dragon, tr.fire-dragon td { background: -webkit-linear-gradient(0deg, #E62829, #5061E1); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.fire-fighting, tr.fire-fighting td { background: -webkit-linear-gradient(0deg, #E62829, #FF8000); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.fire-flying, tr.fire-flying td { background: -webkit-linear-gradient(0deg, #E62829, #81B9EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.fire-ghost, tr.fire-ghost td { background: -webkit-linear-gradient(0deg, #E62829, #704170); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.fire-ground, tr.fire-ground td { background: -webkit-linear-gradient(0deg, #E62829, #915121); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.fire-normal, tr.fire-normal td { background: -webkit-linear-gradient(0deg, #E62829, #9FA19F); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.fire-poison, tr.fire-poison td { background: -webkit-linear-gradient(0deg, #E62829, #8F41CB); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.fire-psychic, tr.fire-psychic td { background: -webkit-linear-gradient(0deg, #E62829, #EF4179); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.fire-rock, tr.fire-rock td { background: -webkit-linear-gradient(0deg, #E62829, #AFA981); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.fire-steel, tr.fire-steel td { background: -webkit-linear-gradient(0deg, #E62829, #60A1B8); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.fire-water, tr.fire-water td { background: -webkit-linear-gradient(0deg, #E62829, #2980EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.flying, tr.flying td { background: -webkit-linear-gradient(0deg, #81B9EF, #81B9EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.flying-dark, tr.flying-dark td { background: -webkit-linear-gradient(0deg, #81B9EF, #50413F); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.flying-dragon, tr.flying-dragon td { background: -webkit-linear-gradient(0deg, #81B9EF, #5061E1); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.flying-fighting, tr.flying-fighting td { background: -webkit-linear-gradient(0deg, #81B9EF, #FF8000); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.flying-steel, tr.flying-steel td { background: -webkit-linear-gradient(0deg, #81B9EF, #60A1B8); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.flying-water, tr.flying-water td { background: -webkit-linear-gradient(0deg, #81B9EF, #2980EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.ghost, tr.ghost td { background: -webkit-linear-gradient(0deg, #704170, #704170); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.ghost-dark, tr.ghost-dark td { background: -webkit-linear-gradient(0deg, #704170, #50413F); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.ghost-dragon, tr.ghost-dragon td { background: -webkit-linear-gradient(0deg, #704170, #5061E1); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.ghost-fairy, tr.ghost-fairy td { background: -webkit-linear-gradient(0deg, #704170, #EF71EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.ghost-fire, tr.ghost-fire td { background: -webkit-linear-gradient(0deg, #704170, #E62829); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.ghost-flying, tr.ghost-flying td { background: -webkit-linear-gradient(0deg, #704170, #81B9EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.ghost-grass, tr.ghost-grass td { background: -webkit-linear-gradient(0deg, #704170, #3FA129); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.ghost-ground, tr.ghost-ground td { background: -webkit-linear-gradient(0deg, #704170, #915121); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.ghost-poison, tr.ghost-poison td { background: -webkit-linear-gradient(0deg, #704170, #8F41CB); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.grass, tr.grass td { background: -webkit-linear-gradient(0deg, #3FA129, #3FA129); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.grass-dark, tr.grass-dark td { background: -webkit-linear-gradient(0deg, #3FA129, #50413F); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.grass-dragon, tr.grass-dragon td { background: -webkit-linear-gradient(0deg, #3FA129, #5061E1); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.grass-fairy, tr.grass-fairy td { background: -webkit-linear-gradient(0deg, #3FA129, #EF71EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.grass-fighting, tr.grass-fighting td { background: -webkit-linear-gradient(0deg, #3FA129, #FF8000); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.grass-fire, tr.grass-fire td { background: -webkit-linear-gradient(0deg, #3FA129, #E62829); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.grass-flying, tr.grass-flying td { background: -webkit-linear-gradient(0deg, #3FA129, #81B9EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.grass-ghost, tr.grass-ghost td { background: -webkit-linear-gradient(0deg, #3FA129, #704170); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.grass-ground, tr.grass-ground td { background: -webkit-linear-gradient(0deg, #3FA129, #915121); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.grass-ice, tr.grass-ice td { background: -webkit-linear-gradient(0deg, #3FA129, #3FD8FF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.grass-normal, tr.grass-normal td { background: -webkit-linear-gradient(0deg, #3FA129, #9FA19F); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.grass-poison, tr.grass-poison td { background: -webkit-linear-gradient(0deg, #3FA129, #8F41CB); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.grass-psychic, tr.grass-psychic td { background: -webkit-linear-gradient(0deg, #3FA129, #EF4179); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.grass-rock, tr.grass-rock td { background: -webkit-linear-gradient(0deg, #3FA129, #AFA981); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.grass-steel, tr.grass-steel td { background: -webkit-linear-gradient(0deg, #3FA129, #60A1B8); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.grass-water, tr.grass-water td { background: -webkit-linear-gradient(0deg, #3FA129, #2980EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.ground, tr.ground td { background: -webkit-linear-gradient(0deg, #915121, #915121); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.ground-dark, tr.ground-dark td { background: -webkit-linear-gradient(0deg, #915121, #50413F); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.ground-dragon, tr.ground-dragon td { background: -webkit-linear-gradient(0deg, #915121, #5061E1); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.ground-electric, tr.ground-electric td { background: -webkit-linear-gradient(0deg, #915121, #FAC000); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.ground-fighting, tr.ground-fighting td { background: -webkit-linear-gradient(0deg, #915121, #FF8000); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.ground-fire, tr.ground-fire td { background: -webkit-linear-gradient(0deg, #915121, #E62829); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.ground-flying, tr.ground-flying td { background: -webkit-linear-gradient(0deg, #915121, #81B9EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.ground-ghost, tr.ground-ghost td { background: -webkit-linear-gradient(0deg, #915121, #704170); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.ground-grass, tr.ground-grass td { background: -webkit-linear-gradient(0deg, #915121, #3FA129); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.ground-normal, tr.ground-normal td { background: -webkit-linear-gradient(0deg, #915121, #9FA19F); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.ground-psychic, tr.ground-psychic td { background: -webkit-linear-gradient(0deg, #915121, #EF4179); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.ground-rock, tr.ground-rock td { background: -webkit-linear-gradient(0deg, #915121, #AFA981); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.ground-steel, tr.ground-steel td { background: -webkit-linear-gradient(0deg, #915121, #60A1B8); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.ice, tr.ice td { background: -webkit-linear-gradient(0deg, #3FD8FF, #3FD8FF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.ice-bug, tr.ice-bug td { background: -webkit-linear-gradient(0deg, #3FD8FF, #91A119); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.ice-fairy, tr.ice-fairy td { background: -webkit-linear-gradient(0deg, #3FD8FF, #EF71EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.ice-fire, tr.ice-fire td { background: -webkit-linear-gradient(0deg, #3FD8FF, #E62829); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.ice-flying, tr.ice-flying td { background: -webkit-linear-gradient(0deg, #3FD8FF, #81B9EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.ice-ghost, tr.ice-ghost td { background: -webkit-linear-gradient(0deg, #3FD8FF, #704170); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.ice-ground, tr.ice-ground td { background: -webkit-linear-gradient(0deg, #3FD8FF, #915121); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.ice-psychic, tr.ice-psychic td { background: -webkit-linear-gradient(0deg, #3FD8FF, #EF4179); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.ice-rock, tr.ice-rock td { background: -webkit-linear-gradient(0deg, #3FD8FF, #AFA981); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.ice-steel, tr.ice-steel td { background: -webkit-linear-gradient(0deg, #3FD8FF, #60A1B8); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.ice-water, tr.ice-water td { background: -webkit-linear-gradient(0deg, #3FD8FF, #2980EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.normal, tr.normal td { background: -webkit-linear-gradient(0deg, #9FA19F, #9FA19F); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.normal-dragon, tr.normal-dragon td { background: -webkit-linear-gradient(0deg, #9FA19F, #5061E1); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.normal-fairy, tr.normal-fairy td { background: -webkit-linear-gradient(0deg, #9FA19F, #EF71EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.normal-fighting, tr.normal-fighting td { background: -webkit-linear-gradient(0deg, #9FA19F, #FF8000); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.normal-flying, tr.normal-flying td { background: -webkit-linear-gradient(0deg, #9FA19F, #81B9EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.normal-ghost, tr.normal-ghost td { background: -webkit-linear-gradient(0deg, #9FA19F, #704170); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.normal-grass, tr.normal-grass td { background: -webkit-linear-gradient(0deg, #9FA19F, #3FA129); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.normal-ground, tr.normal-ground td { background: -webkit-linear-gradient(0deg, #9FA19F, #915121); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.normal-psychic, tr.normal-psychic td { background: -webkit-linear-gradient(0deg, #9FA19F, #EF4179); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.normal-water, tr.normal-water td { background: -webkit-linear-gradient(0deg, #9FA19F, #2980EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.poison, tr.poison td { background: -webkit-linear-gradient(0deg, #8F41CB, #8F41CB); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.poison-bug, tr.poison-bug td { background: -webkit-linear-gradient(0deg, #8F41CB, #91A119); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.poison-dark, tr.poison-dark td { background: -webkit-linear-gradient(0deg, #8F41CB, #50413F); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.poison-dragon, tr.poison-dragon td { background: -webkit-linear-gradient(0deg, #8F41CB, #5061E1); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.poison-fairy, tr.poison-fairy td { background: -webkit-linear-gradient(0deg, #8F41CB, #EF71EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.poison-fighting, tr.poison-fighting td { background: -webkit-linear-gradient(0deg, #8F41CB, #FF8000); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.poison-fire, tr.poison-fire td { background: -webkit-linear-gradient(0deg, #8F41CB, #E62829); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.poison-flying, tr.poison-flying td { background: -webkit-linear-gradient(0deg, #8F41CB, #81B9EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.poison-ghost, tr.poison-ghost td { background: -webkit-linear-gradient(0deg, #8F41CB, #704170); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.poison-ground, tr.poison-ground td { background: -webkit-linear-gradient(0deg, #8F41CB, #915121); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.poison-normal, tr.poison-normal td { background: -webkit-linear-gradient(0deg, #8F41CB, #9FA19F); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.poison-psychic, tr.poison-psychic td { background: -webkit-linear-gradient(0deg, #8F41CB, #EF4179); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.poison-water, tr.poison-water td { background: -webkit-linear-gradient(0deg, #8F41CB, #2980EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.psychic, tr.psychic td { background: -webkit-linear-gradient(0deg, #EF4179, #EF4179); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.psychic-dark, tr.psychic-dark td { background: -webkit-linear-gradient(0deg, #EF4179, #50413F); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.psychic-dragon, tr.psychic-dragon td { background: -webkit-linear-gradient(0deg, #EF4179, #5061E1); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.psychic-fairy, tr.psychic-fairy td { background: -webkit-linear-gradient(0deg, #EF4179, #EF71EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.psychic-fighting, tr.psychic-fighting td { background: -webkit-linear-gradient(0deg, #EF4179, #FF8000); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.psychic-fire, tr.psychic-fire td { background: -webkit-linear-gradient(0deg, #EF4179, #E62829); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.psychic-flying, tr.psychic-flying td { background: -webkit-linear-gradient(0deg, #EF4179, #81B9EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.psychic-ghost, tr.psychic-ghost td { background: -webkit-linear-gradient(0deg, #EF4179, #704170); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.psychic-grass, tr.psychic-grass td { background: -webkit-linear-gradient(0deg, #EF4179, #3FA129); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.psychic-ice, tr.psychic-ice td { background: -webkit-linear-gradient(0deg, #EF4179, #3FD8FF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.psychic-normal, tr.psychic-normal td { background: -webkit-linear-gradient(0deg, #EF4179, #9FA19F); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.psychic-steel, tr.psychic-steel td { background: -webkit-linear-gradient(0deg, #EF4179, #60A1B8); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.rock, tr.rock td { background: -webkit-linear-gradient(0deg, #AFA981, #AFA981); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.rock-bug, tr.rock-bug td { background: -webkit-linear-gradient(0deg, #AFA981, #91A119); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.rock-dark, tr.rock-dark td { background: -webkit-linear-gradient(0deg, #AFA981, #50413F); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.rock-dragon, tr.rock-dragon td { background: -webkit-linear-gradient(0deg, #AFA981, #5061E1); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.rock-electric, tr.rock-electric td { background: -webkit-linear-gradient(0deg, #AFA981, #FAC000); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.rock-fairy, tr.rock-fairy td { background: -webkit-linear-gradient(0deg, #AFA981, #EF71EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.rock-fighting, tr.rock-fighting td { background: -webkit-linear-gradient(0deg, #AFA981, #FF8000); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.rock-fire, tr.rock-fire td { background: -webkit-linear-gradient(0deg, #AFA981, #E62829); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.rock-flying, tr.rock-flying td { background: -webkit-linear-gradient(0deg, #AFA981, #81B9EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.rock-grass, tr.rock-grass td { background: -webkit-linear-gradient(0deg, #AFA981, #3FA129); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.rock-ground, tr.rock-ground td { background: -webkit-linear-gradient(0deg, #AFA981, #915121); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.rock-ice, tr.rock-ice td { background: -webkit-linear-gradient(0deg, #AFA981, #3FD8FF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.rock-poison, tr.rock-poison td { background: -webkit-linear-gradient(0deg, #AFA981, #8F41CB); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.rock-psychic, tr.rock-psychic td { background: -webkit-linear-gradient(0deg, #AFA981, #EF4179); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.rock-steel, tr.rock-steel td { background: -webkit-linear-gradient(0deg, #AFA981, #60A1B8); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.rock-water, tr.rock-water td { background: -webkit-linear-gradient(0deg, #AFA981, #2980EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.steel, tr.steel td { background: -webkit-linear-gradient(0deg, #60A1B8, #60A1B8); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.steel-dragon, tr.steel-dragon td { background: -webkit-linear-gradient(0deg, #60A1B8, #5061E1); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.steel-fairy, tr.steel-fairy td { background: -webkit-linear-gradient(0deg, #60A1B8, #EF71EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.steel-fighting, tr.steel-fighting td { background: -webkit-linear-gradient(0deg, #60A1B8, #FF8000); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.steel-flying, tr.steel-flying td { background: -webkit-linear-gradient(0deg, #60A1B8, #81B9EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.steel-ghost, tr.steel-ghost td { background: -webkit-linear-gradient(0deg, #60A1B8, #704170); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.steel-ground, tr.steel-ground td { background: -webkit-linear-gradient(0deg, #60A1B8, #915121); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.steel-poison, tr.steel-poison td { background: -webkit-linear-gradient(0deg, #60A1B8, #8F41CB); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.steel-psychic, tr.steel-psychic td { background: -webkit-linear-gradient(0deg, #60A1B8, #EF4179); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.steel-rock, tr.steel-rock td { background: -webkit-linear-gradient(0deg, #60A1B8, #AFA981); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.water, tr.water td { background: -webkit-linear-gradient(0deg, #2980EF, #2980EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.water-bug, tr.water-bug td { background: -webkit-linear-gradient(0deg, #2980EF, #91A119); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.water-dark, tr.water-dark td { background: -webkit-linear-gradient(0deg, #2980EF, #50413F); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.water-dragon, tr.water-dragon td { background: -webkit-linear-gradient(0deg, #2980EF, #5061E1); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.water-electric, tr.water-electric td { background: -webkit-linear-gradient(0deg, #2980EF, #FAC000); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.water-fairy, tr.water-fairy td { background: -webkit-linear-gradient(0deg, #2980EF, #EF71EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.water-fighting, tr.water-fighting td { background: -webkit-linear-gradient(0deg, #2980EF, #FF8000); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.water-flying, tr.water-flying td { background: -webkit-linear-gradient(0deg, #2980EF, #81B9EF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.water-ghost, tr.water-ghost td { background: -webkit-linear-gradient(0deg, #2980EF, #704170); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.water-grass, tr.water-grass td { background: -webkit-linear-gradient(0deg, #2980EF, #3FA129); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.water-ground, tr.water-ground td { background: -webkit-linear-gradient(0deg, #2980EF, #915121); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.water-ice, tr.water-ice td { background: -webkit-linear-gradient(0deg, #2980EF, #3FD8FF); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.water-poison, tr.water-poison td { background: -webkit-linear-gradient(0deg, #2980EF, #8F41CB); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.water-psychic, tr.water-psychic td { background: -webkit-linear-gradient(0deg, #2980EF, #EF4179); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.water-rock, tr.water-rock td { background: -webkit-linear-gradient(0deg, #2980EF, #AFA981); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
+.water-steel, tr.water-steel td { background: -webkit-linear-gradient(0deg, #2980EF, #60A1B8); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent }
 
-.bug {
-	background-color: #91a119;
-}
-
-.dragon {
-	background-color: #5061e1;
-}
-
-.electric {
-	background-color: #fac000;
-}
-
-.ghost {
-	background-color: #704170;
-}
-
-.fire {
-	background-color: #e62829;
-}
-
-.fairy {
-	background-color: #ef71ef;
-}
-
-.ice {
-	background-color: #3fd8ff;
-}
-
-.fighting {
-	background-color: #ff8000;
-}
-
-.normal {
-	background-color: #9fa19f;
-}
-
-.grass {
-	background-color: #3fa129;
-}
-
-.psychic {
-	background-color: #ef4179;
-}
-
-.rock {
-	background-color: #afa981;
-}
-
-.dark {
-	background-color: #50413f;
-}
-
-.ground {
-	background-color: #915121;
-}
-
-.poison {
-	background-color: #8f41cb;
-}
-
-.flying {
-	background-color: #81b9ef;
-}
+.border-bug { border-image: linear-gradient(to bottom right, #91A119, #91A119) 1 !important; }
+.border-bug-dark { border-image: linear-gradient(to bottom right, #91A119, #50413F) 1 !important; }
+.border-bug-electric { border-image: linear-gradient(to bottom right, #91A119, #FAC000) 1 !important; }
+.border-bug-fairy { border-image: linear-gradient(to bottom right, #91A119, #EF71EF) 1 !important; }
+.border-bug-fighting { border-image: linear-gradient(to bottom right, #91A119, #FF8000) 1 !important; }
+.border-bug-fire { border-image: linear-gradient(to bottom right, #91A119, #E62829) 1 !important; }
+.border-bug-flying { border-image: linear-gradient(to bottom right, #91A119, #81B9EF) 1 !important; }
+.border-bug-ghost { border-image: linear-gradient(to bottom right, #91A119, #704170) 1 !important; }
+.border-bug-grass { border-image: linear-gradient(to bottom right, #91A119, #3FA129) 1 !important; }
+.border-bug-ground { border-image: linear-gradient(to bottom right, #91A119, #915121) 1 !important; }
+.border-bug-poison { border-image: linear-gradient(to bottom right, #91A119, #8F41CB) 1 !important; }
+.border-bug-psychic { border-image: linear-gradient(to bottom right, #91A119, #EF4179) 1 !important; }
+.border-bug-rock { border-image: linear-gradient(to bottom right, #91A119, #AFA981) 1 !important; }
+.border-bug-steel { border-image: linear-gradient(to bottom right, #91A119, #60A1B8) 1 !important; }
+.border-bug-water { border-image: linear-gradient(to bottom right, #91A119, #2980EF) 1 !important; }
+.border-dark { border-image: linear-gradient(to bottom right, #50413F, #50413F) 1 !important; }
+.border-dark-dragon { border-image: linear-gradient(to bottom right, #50413F, #5061E1) 1 !important; }
+.border-dark-fairy { border-image: linear-gradient(to bottom right, #50413F, #EF71EF) 1 !important; }
+.border-dark-fighting { border-image: linear-gradient(to bottom right, #50413F, #FF8000) 1 !important; }
+.border-dark-fire { border-image: linear-gradient(to bottom right, #50413F, #E62829) 1 !important; }
+.border-dark-flying { border-image: linear-gradient(to bottom right, #50413F, #81B9EF) 1 !important; }
+.border-dark-ghost { border-image: linear-gradient(to bottom right, #50413F, #704170) 1 !important; }
+.border-dark-grass { border-image: linear-gradient(to bottom right, #50413F, #3FA129) 1 !important; }
+.border-dark-ground { border-image: linear-gradient(to bottom right, #50413F, #915121) 1 !important; }
+.border-dark-ice { border-image: linear-gradient(to bottom right, #50413F, #3FD8FF) 1 !important; }
+.border-dark-normal { border-image: linear-gradient(to bottom right, #50413F, #9FA19F) 1 !important; }
+.border-dark-poison { border-image: linear-gradient(to bottom right, #50413F, #8F41CB) 1 !important; }
+.border-dark-psychic { border-image: linear-gradient(to bottom right, #50413F, #EF4179) 1 !important; }
+.border-dark-steel { border-image: linear-gradient(to bottom right, #50413F, #60A1B8) 1 !important; }
+.border-dragon { border-image: linear-gradient(to bottom right, #5061E1, #5061E1) 1 !important; }
+.border-dragon-dark { border-image: linear-gradient(to bottom right, #5061E1, #50413F) 1 !important; }
+.border-dragon-electric { border-image: linear-gradient(to bottom right, #5061E1, #FAC000) 1 !important; }
+.border-dragon-fairy { border-image: linear-gradient(to bottom right, #5061E1, #EF71EF) 1 !important; }
+.border-dragon-fighting { border-image: linear-gradient(to bottom right, #5061E1, #FF8000) 1 !important; }
+.border-dragon-fire { border-image: linear-gradient(to bottom right, #5061E1, #E62829) 1 !important; }
+.border-dragon-flying { border-image: linear-gradient(to bottom right, #5061E1, #81B9EF) 1 !important; }
+.border-dragon-ghost { border-image: linear-gradient(to bottom right, #5061E1, #704170) 1 !important; }
+.border-dragon-ground { border-image: linear-gradient(to bottom right, #5061E1, #915121) 1 !important; }
+.border-dragon-ice { border-image: linear-gradient(to bottom right, #5061E1, #3FD8FF) 1 !important; }
+.border-dragon-normal { border-image: linear-gradient(to bottom right, #5061E1, #9FA19F) 1 !important; }
+.border-dragon-psychic { border-image: linear-gradient(to bottom right, #5061E1, #EF4179) 1 !important; }
+.border-dragon-water { border-image: linear-gradient(to bottom right, #5061E1, #2980EF) 1 !important; }
+.border-electric { border-image: linear-gradient(to bottom right, #FAC000, #FAC000) 1 !important; }
+.border-electric-dark { border-image: linear-gradient(to bottom right, #FAC000, #50413F) 1 !important; }
+.border-electric-dragon { border-image: linear-gradient(to bottom right, #FAC000, #5061E1) 1 !important; }
+.border-electric-fairy { border-image: linear-gradient(to bottom right, #FAC000, #EF71EF) 1 !important; }
+.border-electric-fighting { border-image: linear-gradient(to bottom right, #FAC000, #FF8000) 1 !important; }
+.border-electric-fire { border-image: linear-gradient(to bottom right, #FAC000, #E62829) 1 !important; }
+.border-electric-flying { border-image: linear-gradient(to bottom right, #FAC000, #81B9EF) 1 !important; }
+.border-electric-ghost { border-image: linear-gradient(to bottom right, #FAC000, #704170) 1 !important; }
+.border-electric-grass { border-image: linear-gradient(to bottom right, #FAC000, #3FA129) 1 !important; }
+.border-electric-ground { border-image: linear-gradient(to bottom right, #FAC000, #915121) 1 !important; }
+.border-electric-ice { border-image: linear-gradient(to bottom right, #FAC000, #3FD8FF) 1 !important; }
+.border-electric-normal { border-image: linear-gradient(to bottom right, #FAC000, #9FA19F) 1 !important; }
+.border-electric-poison { border-image: linear-gradient(to bottom right, #FAC000, #8F41CB) 1 !important; }
+.border-electric-psychic { border-image: linear-gradient(to bottom right, #FAC000, #EF4179) 1 !important; }
+.border-electric-steel { border-image: linear-gradient(to bottom right, #FAC000, #60A1B8) 1 !important; }
+.border-electric-water { border-image: linear-gradient(to bottom right, #FAC000, #2980EF) 1 !important; }
+.border-fairy { border-image: linear-gradient(to bottom right, #EF71EF, #EF71EF) 1 !important; }
+.border-fairy-fighting { border-image: linear-gradient(to bottom right, #EF71EF, #FF8000) 1 !important; }
+.border-fairy-flying { border-image: linear-gradient(to bottom right, #EF71EF, #81B9EF) 1 !important; }
+.border-fairy-psychic { border-image: linear-gradient(to bottom right, #EF71EF, #EF4179) 1 !important; }
+.border-fairy-steel { border-image: linear-gradient(to bottom right, #EF71EF, #60A1B8) 1 !important; }
+.border-fighting { border-image: linear-gradient(to bottom right, #FF8000, #FF8000) 1 !important; }
+.border-fighting-dark { border-image: linear-gradient(to bottom right, #FF8000, #50413F) 1 !important; }
+.border-fighting-dragon { border-image: linear-gradient(to bottom right, #FF8000, #5061E1) 1 !important; }
+.border-fighting-electric { border-image: linear-gradient(to bottom right, #FF8000, #FAC000) 1 !important; }
+.border-fighting-fire { border-image: linear-gradient(to bottom right, #FF8000, #E62829) 1 !important; }
+.border-fighting-flying { border-image: linear-gradient(to bottom right, #FF8000, #81B9EF) 1 !important; }
+.border-fighting-ghost { border-image: linear-gradient(to bottom right, #FF8000, #704170) 1 !important; }
+.border-fighting-ice { border-image: linear-gradient(to bottom right, #FF8000, #3FD8FF) 1 !important; }
+.border-fighting-poison { border-image: linear-gradient(to bottom right, #FF8000, #8F41CB) 1 !important; }
+.border-fighting-psychic { border-image: linear-gradient(to bottom right, #FF8000, #EF4179) 1 !important; }
+.border-fighting-steel { border-image: linear-gradient(to bottom right, #FF8000, #60A1B8) 1 !important; }
+.border-fighting-water { border-image: linear-gradient(to bottom right, #FF8000, #2980EF) 1 !important; }
+.border-fire { border-image: linear-gradient(to bottom right, #E62829, #E62829) 1 !important; }
+.border-fire-bug { border-image: linear-gradient(to bottom right, #E62829, #91A119) 1 !important; }
+.border-fire-dark { border-image: linear-gradient(to bottom right, #E62829, #50413F) 1 !important; }
+.border-fire-dragon { border-image: linear-gradient(to bottom right, #E62829, #5061E1) 1 !important; }
+.border-fire-fighting { border-image: linear-gradient(to bottom right, #E62829, #FF8000) 1 !important; }
+.border-fire-flying { border-image: linear-gradient(to bottom right, #E62829, #81B9EF) 1 !important; }
+.border-fire-ghost { border-image: linear-gradient(to bottom right, #E62829, #704170) 1 !important; }
+.border-fire-ground { border-image: linear-gradient(to bottom right, #E62829, #915121) 1 !important; }
+.border-fire-normal { border-image: linear-gradient(to bottom right, #E62829, #9FA19F) 1 !important; }
+.border-fire-poison { border-image: linear-gradient(to bottom right, #E62829, #8F41CB) 1 !important; }
+.border-fire-psychic { border-image: linear-gradient(to bottom right, #E62829, #EF4179) 1 !important; }
+.border-fire-rock { border-image: linear-gradient(to bottom right, #E62829, #AFA981) 1 !important; }
+.border-fire-steel { border-image: linear-gradient(to bottom right, #E62829, #60A1B8) 1 !important; }
+.border-fire-water { border-image: linear-gradient(to bottom right, #E62829, #2980EF) 1 !important; }
+.border-flying { border-image: linear-gradient(to bottom right, #81B9EF, #81B9EF) 1 !important; }
+.border-flying-dark { border-image: linear-gradient(to bottom right, #81B9EF, #50413F) 1 !important; }
+.border-flying-dragon { border-image: linear-gradient(to bottom right, #81B9EF, #5061E1) 1 !important; }
+.border-flying-fighting { border-image: linear-gradient(to bottom right, #81B9EF, #FF8000) 1 !important; }
+.border-flying-steel { border-image: linear-gradient(to bottom right, #81B9EF, #60A1B8) 1 !important; }
+.border-flying-water { border-image: linear-gradient(to bottom right, #81B9EF, #2980EF) 1 !important; }
+.border-ghost { border-image: linear-gradient(to bottom right, #704170, #704170) 1 !important; }
+.border-ghost-dark { border-image: linear-gradient(to bottom right, #704170, #50413F) 1 !important; }
+.border-ghost-dragon { border-image: linear-gradient(to bottom right, #704170, #5061E1) 1 !important; }
+.border-ghost-fairy { border-image: linear-gradient(to bottom right, #704170, #EF71EF) 1 !important; }
+.border-ghost-fire { border-image: linear-gradient(to bottom right, #704170, #E62829) 1 !important; }
+.border-ghost-flying { border-image: linear-gradient(to bottom right, #704170, #81B9EF) 1 !important; }
+.border-ghost-grass { border-image: linear-gradient(to bottom right, #704170, #3FA129) 1 !important; }
+.border-ghost-ground { border-image: linear-gradient(to bottom right, #704170, #915121) 1 !important; }
+.border-ghost-poison { border-image: linear-gradient(to bottom right, #704170, #8F41CB) 1 !important; }
+.border-grass { border-image: linear-gradient(to bottom right, #3FA129, #3FA129) 1 !important; }
+.border-grass-dark { border-image: linear-gradient(to bottom right, #3FA129, #50413F) 1 !important; }
+.border-grass-dragon { border-image: linear-gradient(to bottom right, #3FA129, #5061E1) 1 !important; }
+.border-grass-fairy { border-image: linear-gradient(to bottom right, #3FA129, #EF71EF) 1 !important; }
+.border-grass-fighting { border-image: linear-gradient(to bottom right, #3FA129, #FF8000) 1 !important; }
+.border-grass-fire { border-image: linear-gradient(to bottom right, #3FA129, #E62829) 1 !important; }
+.border-grass-flying { border-image: linear-gradient(to bottom right, #3FA129, #81B9EF) 1 !important; }
+.border-grass-ghost { border-image: linear-gradient(to bottom right, #3FA129, #704170) 1 !important; }
+.border-grass-ground { border-image: linear-gradient(to bottom right, #3FA129, #915121) 1 !important; }
+.border-grass-ice { border-image: linear-gradient(to bottom right, #3FA129, #3FD8FF) 1 !important; }
+.border-grass-normal { border-image: linear-gradient(to bottom right, #3FA129, #9FA19F) 1 !important; }
+.border-grass-poison { border-image: linear-gradient(to bottom right, #3FA129, #8F41CB) 1 !important; }
+.border-grass-psychic { border-image: linear-gradient(to bottom right, #3FA129, #EF4179) 1 !important; }
+.border-grass-rock { border-image: linear-gradient(to bottom right, #3FA129, #AFA981) 1 !important; }
+.border-grass-steel { border-image: linear-gradient(to bottom right, #3FA129, #60A1B8) 1 !important; }
+.border-grass-water { border-image: linear-gradient(to bottom right, #3FA129, #2980EF) 1 !important; }
+.border-ground { border-image: linear-gradient(to bottom right, #915121, #915121) 1 !important; }
+.border-ground-dark { border-image: linear-gradient(to bottom right, #915121, #50413F) 1 !important; }
+.border-ground-dragon { border-image: linear-gradient(to bottom right, #915121, #5061E1) 1 !important; }
+.border-ground-electric { border-image: linear-gradient(to bottom right, #915121, #FAC000) 1 !important; }
+.border-ground-fighting { border-image: linear-gradient(to bottom right, #915121, #FF8000) 1 !important; }
+.border-ground-fire { border-image: linear-gradient(to bottom right, #915121, #E62829) 1 !important; }
+.border-ground-flying { border-image: linear-gradient(to bottom right, #915121, #81B9EF) 1 !important; }
+.border-ground-ghost { border-image: linear-gradient(to bottom right, #915121, #704170) 1 !important; }
+.border-ground-grass { border-image: linear-gradient(to bottom right, #915121, #3FA129) 1 !important; }
+.border-ground-normal { border-image: linear-gradient(to bottom right, #915121, #9FA19F) 1 !important; }
+.border-ground-psychic { border-image: linear-gradient(to bottom right, #915121, #EF4179) 1 !important; }
+.border-ground-rock { border-image: linear-gradient(to bottom right, #915121, #AFA981) 1 !important; }
+.border-ground-steel { border-image: linear-gradient(to bottom right, #915121, #60A1B8) 1 !important; }
+.border-ice { border-image: linear-gradient(to bottom right, #3FD8FF, #3FD8FF) 1 !important; }
+.border-ice-bug { border-image: linear-gradient(to bottom right, #3FD8FF, #91A119) 1 !important; }
+.border-ice-fairy { border-image: linear-gradient(to bottom right, #3FD8FF, #EF71EF) 1 !important; }
+.border-ice-fire { border-image: linear-gradient(to bottom right, #3FD8FF, #E62829) 1 !important; }
+.border-ice-flying { border-image: linear-gradient(to bottom right, #3FD8FF, #81B9EF) 1 !important; }
+.border-ice-ghost { border-image: linear-gradient(to bottom right, #3FD8FF, #704170) 1 !important; }
+.border-ice-ground { border-image: linear-gradient(to bottom right, #3FD8FF, #915121) 1 !important; }
+.border-ice-psychic { border-image: linear-gradient(to bottom right, #3FD8FF, #EF4179) 1 !important; }
+.border-ice-rock { border-image: linear-gradient(to bottom right, #3FD8FF, #AFA981) 1 !important; }
+.border-ice-steel { border-image: linear-gradient(to bottom right, #3FD8FF, #60A1B8) 1 !important; }
+.border-ice-water { border-image: linear-gradient(to bottom right, #3FD8FF, #2980EF) 1 !important; }
+.border-normal { border-image: linear-gradient(to bottom right, #9FA19F, #9FA19F) 1 !important; }
+.border-normal-dragon { border-image: linear-gradient(to bottom right, #9FA19F, #5061E1) 1 !important; }
+.border-normal-fairy { border-image: linear-gradient(to bottom right, #9FA19F, #EF71EF) 1 !important; }
+.border-normal-fighting { border-image: linear-gradient(to bottom right, #9FA19F, #FF8000) 1 !important; }
+.border-normal-flying { border-image: linear-gradient(to bottom right, #9FA19F, #81B9EF) 1 !important; }
+.border-normal-ghost { border-image: linear-gradient(to bottom right, #9FA19F, #704170) 1 !important; }
+.border-normal-grass { border-image: linear-gradient(to bottom right, #9FA19F, #3FA129) 1 !important; }
+.border-normal-ground { border-image: linear-gradient(to bottom right, #9FA19F, #915121) 1 !important; }
+.border-normal-psychic { border-image: linear-gradient(to bottom right, #9FA19F, #EF4179) 1 !important; }
+.border-normal-water { border-image: linear-gradient(to bottom right, #9FA19F, #2980EF) 1 !important; }
+.border-poison { border-image: linear-gradient(to bottom right, #8F41CB, #8F41CB) 1 !important; }
+.border-poison-bug { border-image: linear-gradient(to bottom right, #8F41CB, #91A119) 1 !important; }
+.border-poison-dark { border-image: linear-gradient(to bottom right, #8F41CB, #50413F) 1 !important; }
+.border-poison-dragon { border-image: linear-gradient(to bottom right, #8F41CB, #5061E1) 1 !important; }
+.border-poison-fairy { border-image: linear-gradient(to bottom right, #8F41CB, #EF71EF) 1 !important; }
+.border-poison-fighting { border-image: linear-gradient(to bottom right, #8F41CB, #FF8000) 1 !important; }
+.border-poison-fire { border-image: linear-gradient(to bottom right, #8F41CB, #E62829) 1 !important; }
+.border-poison-flying { border-image: linear-gradient(to bottom right, #8F41CB, #81B9EF) 1 !important; }
+.border-poison-ghost { border-image: linear-gradient(to bottom right, #8F41CB, #704170) 1 !important; }
+.border-poison-ground { border-image: linear-gradient(to bottom right, #8F41CB, #915121) 1 !important; }
+.border-poison-normal { border-image: linear-gradient(to bottom right, #8F41CB, #9FA19F) 1 !important; }
+.border-poison-psychic { border-image: linear-gradient(to bottom right, #8F41CB, #EF4179) 1 !important; }
+.border-poison-water { border-image: linear-gradient(to bottom right, #8F41CB, #2980EF) 1 !important; }
+.border-psychic { border-image: linear-gradient(to bottom right, #EF4179, #EF4179) 1 !important; }
+.border-psychic-dark { border-image: linear-gradient(to bottom right, #EF4179, #50413F) 1 !important; }
+.border-psychic-dragon { border-image: linear-gradient(to bottom right, #EF4179, #5061E1) 1 !important; }
+.border-psychic-fairy { border-image: linear-gradient(to bottom right, #EF4179, #EF71EF) 1 !important; }
+.border-psychic-fighting { border-image: linear-gradient(to bottom right, #EF4179, #FF8000) 1 !important; }
+.border-psychic-fire { border-image: linear-gradient(to bottom right, #EF4179, #E62829) 1 !important; }
+.border-psychic-flying { border-image: linear-gradient(to bottom right, #EF4179, #81B9EF) 1 !important; }
+.border-psychic-ghost { border-image: linear-gradient(to bottom right, #EF4179, #704170) 1 !important; }
+.border-psychic-grass { border-image: linear-gradient(to bottom right, #EF4179, #3FA129) 1 !important; }
+.border-psychic-ice { border-image: linear-gradient(to bottom right, #EF4179, #3FD8FF) 1 !important; }
+.border-psychic-normal { border-image: linear-gradient(to bottom right, #EF4179, #9FA19F) 1 !important; }
+.border-psychic-steel { border-image: linear-gradient(to bottom right, #EF4179, #60A1B8) 1 !important; }
+.border-rock { border-image: linear-gradient(to bottom right, #AFA981, #AFA981) 1 !important; }
+.border-rock-bug { border-image: linear-gradient(to bottom right, #AFA981, #91A119) 1 !important; }
+.border-rock-dark { border-image: linear-gradient(to bottom right, #AFA981, #50413F) 1 !important; }
+.border-rock-dragon { border-image: linear-gradient(to bottom right, #AFA981, #5061E1) 1 !important; }
+.border-rock-electric { border-image: linear-gradient(to bottom right, #AFA981, #FAC000) 1 !important; }
+.border-rock-fairy { border-image: linear-gradient(to bottom right, #AFA981, #EF71EF) 1 !important; }
+.border-rock-fighting { border-image: linear-gradient(to bottom right, #AFA981, #FF8000) 1 !important; }
+.border-rock-fire { border-image: linear-gradient(to bottom right, #AFA981, #E62829) 1 !important; }
+.border-rock-flying { border-image: linear-gradient(to bottom right, #AFA981, #81B9EF) 1 !important; }
+.border-rock-grass { border-image: linear-gradient(to bottom right, #AFA981, #3FA129) 1 !important; }
+.border-rock-ground { border-image: linear-gradient(to bottom right, #AFA981, #915121) 1 !important; }
+.border-rock-ice { border-image: linear-gradient(to bottom right, #AFA981, #3FD8FF) 1 !important; }
+.border-rock-poison { border-image: linear-gradient(to bottom right, #AFA981, #8F41CB) 1 !important; }
+.border-rock-psychic { border-image: linear-gradient(to bottom right, #AFA981, #EF4179) 1 !important; }
+.border-rock-steel { border-image: linear-gradient(to bottom right, #AFA981, #60A1B8) 1 !important; }
+.border-rock-water { border-image: linear-gradient(to bottom right, #AFA981, #2980EF) 1 !important; }
+.border-steel { border-image: linear-gradient(to bottom right, #60A1B8, #60A1B8) 1 !important; }
+.border-steel-dragon { border-image: linear-gradient(to bottom right, #60A1B8, #5061E1) 1 !important; }
+.border-steel-fairy { border-image: linear-gradient(to bottom right, #60A1B8, #EF71EF) 1 !important; }
+.border-steel-fighting { border-image: linear-gradient(to bottom right, #60A1B8, #FF8000) 1 !important; }
+.border-steel-flying { border-image: linear-gradient(to bottom right, #60A1B8, #81B9EF) 1 !important; }
+.border-steel-ghost { border-image: linear-gradient(to bottom right, #60A1B8, #704170) 1 !important; }
+.border-steel-ground { border-image: linear-gradient(to bottom right, #60A1B8, #915121) 1 !important; }
+.border-steel-poison { border-image: linear-gradient(to bottom right, #60A1B8, #8F41CB) 1 !important; }
+.border-steel-psychic { border-image: linear-gradient(to bottom right, #60A1B8, #EF4179) 1 !important; }
+.border-steel-rock { border-image: linear-gradient(to bottom right, #60A1B8, #AFA981) 1 !important; }
+.border-water { border-image: linear-gradient(to bottom right, #2980EF, #2980EF) 1 !important; }
+.border-water-bug { border-image: linear-gradient(to bottom right, #2980EF, #91A119) 1 !important; }
+.border-water-dark { border-image: linear-gradient(to bottom right, #2980EF, #50413F) 1 !important; }
+.border-water-dragon { border-image: linear-gradient(to bottom right, #2980EF, #5061E1) 1 !important; }
+.border-water-electric { border-image: linear-gradient(to bottom right, #2980EF, #FAC000) 1 !important; }
+.border-water-fairy { border-image: linear-gradient(to bottom right, #2980EF, #EF71EF) 1 !important; }
+.border-water-fighting { border-image: linear-gradient(to bottom right, #2980EF, #FF8000) 1 !important; }
+.border-water-flying { border-image: linear-gradient(to bottom right, #2980EF, #81B9EF) 1 !important; }
+.border-water-ghost { border-image: linear-gradient(to bottom right, #2980EF, #704170) 1 !important; }
+.border-water-grass { border-image: linear-gradient(to bottom right, #2980EF, #3FA129) 1 !important; }
+.border-water-ground { border-image: linear-gradient(to bottom right, #2980EF, #915121) 1 !important; }
+.border-water-ice { border-image: linear-gradient(to bottom right, #2980EF, #3FD8FF) 1 !important; }
+.border-water-poison { border-image: linear-gradient(to bottom right, #2980EF, #8F41CB) 1 !important; }
+.border-water-psychic { border-image: linear-gradient(to bottom right, #2980EF, #EF4179) 1 !important; }
+.border-water-rock { border-image: linear-gradient(to bottom right, #2980EF, #AFA981) 1 !important; }
+.border-water-steel { border-image: linear-gradient(to bottom right, #2980EF, #60A1B8) 1 !important; }
